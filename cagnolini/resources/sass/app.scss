@@ -1,10 +1,45 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 header {
   height: 10vh;
   background: grey;
 }
 main {
+  background-image: url("https://www.helvetia.de/it/web/it/chi-siamo/blog/Assicurazione/animali/razze-cani/_jcr_content/teaserimage/image.1573488443650.transform-fp/1440x810/razze-cani.jpg");
+  background-size: contain;
   height: 80vh;
-  
+  .main {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    a {
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: black;
+      font-size: xx-large;
+      background-color: rgba(255, 255, 255,0.8);
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .datiCanePadre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      border: 1px solid black;
+      width: 150px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255,0.8);
+    }
+  }
 }
 footer {
   height: 10vh;
