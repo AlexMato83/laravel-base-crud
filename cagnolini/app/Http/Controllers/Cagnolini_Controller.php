@@ -16,7 +16,9 @@ class Cagnolini_Controller extends Controller
 
     public function show($id){
 
-       $cane = Cagnolini::findOrFail($id);
-      return view("cane", compact("cane"));
+       $cani = Cagnolini::all();
+       $cane = $cani->where("id", $id);
+       $cane = $cane[$id-1];
+      return view("cane", compact("cane","id"));
     }
 }

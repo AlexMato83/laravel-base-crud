@@ -3,8 +3,9 @@
 @section('main')
   <div class="main">
      @foreach ($cagnoliniDb as $cane)
-       <a href="{{route('cane')}}"></a>
-       {{$cane["nome"]}}
+       <a href="{{route('cane', $cane['id'])}}">{{$cane["nome"]}}</a>
+
+
      @endforeach
   </div>
 @endsection
