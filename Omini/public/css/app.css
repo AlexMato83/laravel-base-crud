@@ -5,10 +5,13 @@
 }
 
 header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
+  width: 100vw;
   background: black;
   color: white;
 }
@@ -17,14 +20,48 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  margin-top: 20vh;
+}
+
+main ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main ul > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid blue;
+  height: 50px;
+  width: 150px;
+  color: red;
+  margin-bottom: 30px;
+}
+
+main li {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+main .dettagliOmini {
+  width: 300px;
+  height: auto;
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
   height: 10vh;
+  width: 100vw;
   background: black;
   color: white;
 }

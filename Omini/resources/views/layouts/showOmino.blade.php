@@ -9,7 +9,9 @@
     <p>nome: <b>{{$omino["code"]}}</b></p>
     <p>nome: <b>{{$omino["state"]}}</b></p>
     <p>nome: <b>{{$omino["phoneNumber"]}}</b></p>
-    <p>nome: <b>{{$omino["rule"]}}</b></p>
+    <p>nome: <b>{{$omino["rule"]}}</b></p><br><br>
+    <span><a href="{{route('edit',$omino['id'])}}">MODIFICA OMINO</a></span>
+
 
   </div>
 @endsection

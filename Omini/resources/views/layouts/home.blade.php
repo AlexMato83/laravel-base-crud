@@ -2,10 +2,12 @@
 
 @section('main')
   <ul>
-    @foreach ($omini as $omino)
-     <li>{{$omino}}</li>
+    <a href="{{route('create')}}">Crea OMINO</a>
 
-     <a href="{{route('show',$omino['id'])}}">vedi dettagli</a><br>
+    @foreach ($omini as $omino)
+     <li>{{$omino["firstname"]}} {{$omino["lastname"]}} <a href="{{route('show',$omino['id'])}}">vedi dettagli</a></li>
+
+     <br>
 
 
 
